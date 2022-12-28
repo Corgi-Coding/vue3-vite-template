@@ -21,6 +21,11 @@ const routes: RouteRecordRaw[] = [
         }
     },
     {
+        path: '/testTable',
+        name: "testTable",
+        component: () => import("@/views/base/testTable/index.vue"),
+    },
+    {
         path: '/error',
         component: () => import("@/views/base/error/index.vue")
     },
