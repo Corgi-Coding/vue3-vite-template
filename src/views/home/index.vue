@@ -4,4 +4,12 @@
   </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import service from '@/config/http.config';
+
+service.get('/api/test').then((res) => {
+  if (res) {
+    console.log(res);
+  }
+});
+</script>
